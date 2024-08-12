@@ -1,0 +1,173 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff9d8 !important;
+}
+
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1em; /* Tamaño de fuente grande */
+    margin-top: 15px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+
+/* Estilo de la BARRA DE NAVEGACIÓN */
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #5e4352; /* Color de fondo de la barra */
+    padding: 10px;
+}
+
+.nav-tabs .nav-link {
+    background-color: #ffcc00; /* Color de los botones */
+    color: #5e4352; /* Color del texto de los botones */
+    margin: 0 5px; /* Espaciado entre botones */
+    padding: 2px 5px; /* Ajusta el relleno aquí */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 17px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #fff9d8; /* Color de fondo del botón activo */
+    color: #5e4352; /* Color del texto del botón activo */
+    border: 2px solid #5e4352; /* Borde del botón activo */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #5e4352; /* Color de fondo al pasar el cursor */
+    color: #ffcc00; /* Color del texto al pasar el cursor */
+    border: 2px solid #ffcc00; /* Borde al pasar el cursor */
+}
+
+
+/* Estilo para el Logo Naturalmente */
+.imagen-logo-nosotros {
+    display: block;
+    margin: 0 auto 10px auto; /* Centra la imagen horizontalmente y mantiene el margen inferior */
+    width: 100%;
+    max-width: 600px; /* Aumenta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* ESTILOS PARA EL HTML DE MIEL */
+
+/* Estilo general para el contenedor y la imagen */
+.contenido-pura {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+    flex-direction: row; /* Disposición horizontal por defecto */
+    margin: 20px 0; /* Espacio arriba y abajo del contenedor */
+}
+
+.imagen-pura {
+    border-radius: 50%; /* Bordes redondeados para hacer la imagen circular */
+    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 400px; /* Ajusta el ancho de la imagen para vistas grandes */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor sin cortarse */
+}
+
+.texto-pura {
+    max-width: 500px; /* Ajusta el ancho del texto según sea necesario */
+}
+
+
+/* Estilo para tarjetas de miel */
+.tarjeta {
+    width: 100%; /* Asegura que las tarjetas ocupen todo el ancho del contenedor */
+    max-width: 18rem; /* Define un ancho máximo para las tarjetas */
+    margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro de la tarjeta se alineen en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 450px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+/* Estilos para pantallas pequeñas (móviles y tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px; /* Ajusta el padding para dispositivos móviles */
+    }
+    .contenido-pura {
+        flex-direction: column; /* Cambia a disposición vertical en móviles */
+        align-items: center; /* Centra el contenido en dispositivos móviles */
+        margin: 10px 0; /* Reduce el margen en dispositivos móviles */
+    }
+
+    .imagen-pura {
+        width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor en móviles */
+        max-width: none; /* Elimina el límite máximo de ancho */
+    }
+    .texto-pura {
+        padding: 0 15px; /* Ajusta el padding para dispositivos móviles */
+    }
+}
+
+/* Estilo para logo de whatsapp */
+.float {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 30px;
+    color: #57e76f;
+    border-radius: 30%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+}
+
+.fa-whatsapp {
+    font-size: 60px;
+}
+
+.float:hover {
+    background-color: #25d366;
+}
+
+/*  Estilos para el footer */
+footer {
+    background-color: #0e6663; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    font-family: Arial, sans-serif; /* Tipografía */
+}
+
+footer p {
+    margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+footer a {
+    color: #ffffff; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar enlaces al pasar el ratón */
+}
