@@ -67,8 +67,10 @@ h2 {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
-/* ESTILOS PARA EL HTML DE MIEL */
 
+
+
+/* ESTILOS PARA EL HTML DE MIEL */
 /* Estilo general para el contenedor y la imagen */
 .contenido-pura {
     display: flex;
@@ -90,7 +92,6 @@ h2 {
     max-width: 500px; /* Ajusta el ancho del texto según sea necesario */
 }
 
-
 /* Estilo para tarjetas de miel */
 .tarjeta {
     width: 100%; /* Asegura que las tarjetas ocupen todo el ancho del contenedor */
@@ -107,7 +108,14 @@ h2 {
     object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
 }
 
-/* Estilos para pantallas pequeñas (móviles y tablets) */
+.container-tarjetas-miel {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas */
+}
+
+
+/* Estilos para pantallas pequeñas MIEL PURA */
 @media (max-width: 768px) {
     .container {
         padding: 0 15px; /* Ajusta el padding para dispositivos móviles */
@@ -119,13 +127,108 @@ h2 {
     }
 
     .imagen-pura {
-        width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor en móviles */
-        max-width: none; /* Elimina el límite máximo de ancho */
+        border-radius: 50%; 
+        max-width: 100%;
+        margin-right: 20px;
+        
     }
     .texto-pura {
         padding: 0 15px; /* Ajusta el padding para dispositivos móviles */
     }
+
+    .container-tarjetas-miel {
+        justify-content: center; /* Mantiene las tarjetas centradas en pantallas pequeñas */
+        padding: 0 10px; /* Ajusta el padding para asegurar que las tarjetas no se corten */
+        margin-left: 40px;
+    }
 }
+
+
+
+/* ESTILO PARA HIERBAS */
+.container-hierbas {
+    padding: 20px;
+}
+
+.imagen-hierbas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.texto-hierbas {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hierba-tarjeta {
+    max-width: 180px;
+    margin: auto;
+}
+
+.hierba-titulo {
+    font-size: 0.95rem;
+}
+
+.hierba-descripcion {
+    font-size: 0.85rem;
+}
+
+.container-hierbas-medicinales {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hierba-tarjeta .card-img-top {
+    height: 150px; /* Ajusta la altura según sea necesario */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre imagen y contenido */
+    margin-bottom: 10px;
+}
+
+.descripción-hierba {
+    font-size: 13px;
+}
+
+
+/* ESTILO DE HIERBAS PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 767px) {
+    .container-hierbas-medicinales {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hierba-tarjeta {
+        margin-bottom: 20px;
+    }
+
+    .texto-hierbas {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container-hierbas {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imagen-hierbas {
+        border-radius: 50%; 
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    .texto-hierbas {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+
 
 /* Estilo para logo de whatsapp */
 .float {
